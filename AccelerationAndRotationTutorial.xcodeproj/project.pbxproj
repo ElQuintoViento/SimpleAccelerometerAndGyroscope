@@ -22,6 +22,9 @@
 		B5ACFB2619007E30000AB1F1 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5ACFB0A19007E30000AB1F1 /* CoreData.framework */; };
 		B5ACFB2E19007E30000AB1F1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B5ACFB2C19007E30000AB1F1 /* InfoPlist.strings */; };
 		B5ACFB3019007E30000AB1F1 /* AccelerationAndRotationTutorialTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B5ACFB2F19007E30000AB1F1 /* AccelerationAndRotationTutorialTests.m */; };
+		B5ACFB3D19007ECD000AB1F1 /* MainDisplayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5ACFB3B19007ECD000AB1F1 /* MainDisplayViewController.m */; };
+		B5ACFB3E19007ECD000AB1F1 /* MainDisplayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5ACFB3C19007ECD000AB1F1 /* MainDisplayViewController.xib */; };
+		B5ACFB4319008CF8000AB1F1 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5ACFB4219008CF8000AB1F1 /* CoreMotion.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,10 @@
 		B5ACFB2B19007E30000AB1F1 /* AccelerationAndRotationTutorialTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AccelerationAndRotationTutorialTests-Info.plist"; sourceTree = "<group>"; };
 		B5ACFB2D19007E30000AB1F1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B5ACFB2F19007E30000AB1F1 /* AccelerationAndRotationTutorialTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AccelerationAndRotationTutorialTests.m; sourceTree = "<group>"; };
+		B5ACFB3A19007ECD000AB1F1 /* MainDisplayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainDisplayViewController.h; sourceTree = "<group>"; };
+		B5ACFB3B19007ECD000AB1F1 /* MainDisplayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainDisplayViewController.m; sourceTree = "<group>"; };
+		B5ACFB3C19007ECD000AB1F1 /* MainDisplayViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainDisplayViewController.xib; sourceTree = "<group>"; };
+		B5ACFB4219008CF8000AB1F1 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5ACFB4319008CF8000AB1F1 /* CoreMotion.framework in Frameworks */,
 				B5ACFB0719007E30000AB1F1 /* CoreGraphics.framework in Frameworks */,
 				B5ACFB0B19007E30000AB1F1 /* CoreData.framework in Frameworks */,
 				B5ACFB0919007E30000AB1F1 /* UIKit.framework in Frameworks */,
@@ -103,6 +111,7 @@
 		B5ACFB0319007E30000AB1F1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B5ACFB4219008CF8000AB1F1 /* CoreMotion.framework */,
 				B5ACFB0419007E30000AB1F1 /* Foundation.framework */,
 				B5ACFB0619007E30000AB1F1 /* CoreGraphics.framework */,
 				B5ACFB0819007E30000AB1F1 /* UIKit.framework */,
@@ -117,6 +126,7 @@
 			children = (
 				B5ACFB1519007E30000AB1F1 /* AppDelegate.h */,
 				B5ACFB1619007E30000AB1F1 /* AppDelegate.m */,
+				B5ACFB3919007E78000AB1F1 /* View Controller */,
 				B5ACFB1B19007E30000AB1F1 /* Images.xcassets */,
 				B5ACFB1819007E30000AB1F1 /* AccelerationAndRotationTutorial.xcdatamodeld */,
 				B5ACFB0D19007E30000AB1F1 /* Supporting Files */,
@@ -151,6 +161,16 @@
 				B5ACFB2C19007E30000AB1F1 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B5ACFB3919007E78000AB1F1 /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B5ACFB3A19007ECD000AB1F1 /* MainDisplayViewController.h */,
+				B5ACFB3B19007ECD000AB1F1 /* MainDisplayViewController.m */,
+				B5ACFB3C19007ECD000AB1F1 /* MainDisplayViewController.xib */,
+			);
+			name = "View Controller";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,6 +248,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5ACFB3E19007ECD000AB1F1 /* MainDisplayViewController.xib in Resources */,
 				B5ACFB1119007E30000AB1F1 /* InfoPlist.strings in Resources */,
 				B5ACFB1C19007E30000AB1F1 /* Images.xcassets in Resources */,
 			);
@@ -248,6 +269,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5ACFB3D19007ECD000AB1F1 /* MainDisplayViewController.m in Sources */,
 				B5ACFB1A19007E30000AB1F1 /* AccelerationAndRotationTutorial.xcdatamodeld in Sources */,
 				B5ACFB1719007E30000AB1F1 /* AppDelegate.m in Sources */,
 				B5ACFB1319007E30000AB1F1 /* main.m in Sources */,
