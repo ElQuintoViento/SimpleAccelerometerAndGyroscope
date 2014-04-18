@@ -10,7 +10,17 @@
 #import <CoreMotion/CoreMotion.h>
 
 
+double currentMaxAccelX;
+double currentMaxAccelY;
+double currentMaxAccelZ;
+
+double currentMaxRotatX;
+double currentMaxRotatY;
+double currentMaxRotatZ;
+
 @interface MainDisplayViewController : UIViewController<UITextFieldDelegate>
+
+@property(nonatomic, strong)CMMotionManager *motionManager;
 
 @property(nonatomic, strong)IBOutlet UITextField *accelX;
 @property(nonatomic, strong)IBOutlet UITextField *accelY;
